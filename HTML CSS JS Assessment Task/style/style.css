@@ -19,14 +19,13 @@ form{
     padding-top: 50px;
 }
 .red {
-    background-color: red;
-    color: red;
+    background-color: red !important;
 }
 .green {
-    background-color: green       ;
+    background-color: green !important;
 }
 .orange {
-    background-color: orange;
+    background-color: orange !important;
 }
 
 

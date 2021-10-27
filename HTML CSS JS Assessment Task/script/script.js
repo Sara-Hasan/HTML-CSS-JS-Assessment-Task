@@ -7,8 +7,8 @@ let Allergies = document.getElementById('Allergies');
 let welcome = document.getElementById('welcome');
 let errors = document.querySelectorAll('.errors');
 let signbtn = document.getElementById('signbtn');
-const table = document.querySelector(".table");
-const cupcake_table = document.getElementById('cupcake-table');
+const du = document.querySelector(".du");
+const cupcake_du = document.getElementById('cupcake-du');
 user.addEventListener("blur", (e) => {
 	try {
 		if (user.value == "" || user.value.length < 5 || user.value.length > 17)
@@ -81,8 +81,8 @@ var cup_cakes=[
 
 
 function show_cupcakes(){
-    //write code that shows the cupcakes in the table as per the instructions
-    fetch("../cupCake.json")
+    //write code that shows the cupcakes in the du as per the instructions
+    fetch("https://raw.githubusercontent.com/Sara-Hasan/HTML-CSS-JS-Assessment-Task/main/HTML%20CSS%20JS%20Assessment%20Task/cupCake.json")
     .then((response) => response.json())
     .then((data) => {
       for (i = 0; i < data.length; i++) {
@@ -91,7 +91,7 @@ function show_cupcakes(){
       <td class="${allColor(data[i])}">${data[i].calories}</td>
       <td>${data[i].weight}</td>
     </tr>`;
-        table.insertAdjacentHTML("beforeend", tabel);
+        du.insertAdjacentHTML("beforeend", tabel);
       }
     });
         
