@@ -1,0 +1,33 @@
+.logo{
+height: 30px;
+margin-right: 20px;
+}
+
+span.welcome{
+    background-color:black;
+    color:white;
+    padding:10px;
+}
+.navbar-brand{
+    background-color: #F3BFC2;
+    font-weight: bold;
+}
+.errors{
+    color:rgb(185, 14, 14);
+}
+form{
+    padding-top: 50px;
+}
+.red {
+    background-color: red !important;
+}
+.green {
+    background-color: green !important;
+}
+.orange {
+    background-color: orange !important;
+}
+
+
+
+
